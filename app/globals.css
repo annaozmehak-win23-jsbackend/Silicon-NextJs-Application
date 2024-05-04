@@ -132,6 +132,19 @@ body {
     color: var(--color-gray-000);
 }
 
+.btn-theme-s {
+    background: var(--color-theme);
+    color: var(--color-white);
+    padding-top: 10px;
+    padding-bottom: 13px;
+}
+
+.btn-theme-s:hover {
+    text-decoration: none;
+    background: var(--color-gray-700);
+    color: var(--color-gray-000);
+}
+
 form {
     width: 100%;
     display: grid;
