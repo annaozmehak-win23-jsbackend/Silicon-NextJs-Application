@@ -1,0 +1,51 @@
+.basicInfoForm {
+    padding: 1rem;
+}
+
+.pageTitle {
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.formTitle {
+    color: var(--color-theme);
+}
+
+.content {
+    display: grid;
+    gap: 1rem 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "firstname lastname" "email phone" "bio bio" "buttons buttons";
+}
+
+.formFirstname {
+    grid-area: firstname;
+}
+
+.formLastname {
+    grid-area: lastname;
+}
+
+.formEmail {
+    grid-area: email;
+}
+
+.formPhone {
+    grid-area: phone;
+}
+
+.formBio {
+    grid-area: bio;
+
+    .span {
+        color: var(--color-gray-500);
+        font-weight: 400;
+    }
+}
+
+.formButtons {
+    grid-area: buttons;
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+}

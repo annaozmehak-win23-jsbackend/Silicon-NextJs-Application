@@ -1,0 +1,21 @@
+.coursesSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 416px;
+    height: 473px;
+}
+
+@media (min-width: 992px) {
+    .courses {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}

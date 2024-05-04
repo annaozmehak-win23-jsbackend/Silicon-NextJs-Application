@@ -1,0 +1,46 @@
+.addressInfo {
+    margin-top: 30px;
+}
+
+#addressInfoForm {
+    padding: 1rem;
+}
+
+.formTitle {
+    color: var(--color-theme);
+}
+
+.content {
+    display: grid;
+    gap: 1rem 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "addressline_1 addressline_1" "addressline_2 addressline_2" "postalcode city" "buttons buttons";
+}
+
+#formAddressline1 {
+    grid-area: addressline_1;
+}
+
+#formAddressline2 {
+    grid-area: addressline_2;
+
+    .span {
+        color: var(--color-gray-500);
+        font-weight: 400;
+    }
+}
+
+#formPostalcode {
+    grid-area: postalcode;
+}
+
+#formCity {
+    grid-area: city;
+}
+
+.formButtons {
+    grid-area: buttons;
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+}
