@@ -1,6 +1,6 @@
-import AccountAside from "../components/accountAside/AccountAside";
-import AccountDetailsAddressInfoForm from "../components/accountDetailsAddressInfoForm/AccountDetailsAddressInforForm";
-import AccountDetailsBasicInfoForm from "../components/accountDetailsBasicInfoForm/AccountDetailsBasicInfoForm";
+import AccountAside from "../../components/accountAside/AccountAside";
+import AccountDetailsAddressInfoForm from "../../components/accountDetailsAddressInfoForm/AccountDetailsAddressInforForm";
+import AccountDetailsBasicInfoForm from "../../components/accountDetailsBasicInfoForm/AccountDetailsBasicInfoForm";
 import styles from './AccountDetails.module.css';
 
 

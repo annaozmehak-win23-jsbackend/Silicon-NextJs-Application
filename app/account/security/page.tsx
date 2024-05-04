@@ -1,6 +1,6 @@
-import AccountAside from "../components/accountAside/AccountAside";
-import DeleteAccountForm from "../components/accountSecurityDeleteAccountForm/DeleteAccountForm";
-import ChangePasswordForm from "../components/accountSecurityPasswordForm/ChangePasswordForm";
+import AccountAside from "../../components/accountAside/AccountAside";
+import DeleteAccountForm from "../../components/accountSecurityDeleteAccountForm/DeleteAccountForm";
+import ChangePasswordForm from "../../components/accountSecurityPasswordForm/ChangePasswordForm";
 import styles from './AccountSecurity.module.css';
 
 
