@@ -18,10 +18,12 @@ export default function AccountAside() {
                 <p className={styles.email}>anna.ozmehak@gmail.com</p>
             </div>
             <nav className={styles.nav}>
-                <Link className={`btn btnTheme`} href="accountDetails"><i className={`${styles.icon} fa-solid fa-gear`}></i> Details</Link>
-                <Link className={`btn btnTheme`} href="security"><i className={`${styles.icon} fa-solid fa-lock`}></i> Security</Link>
-                <Link className={`btn btnTheme`} href="savedCourses"><i className={`${styles.icon} fa-regular fa-bookmark`}></i> Saved Courses</Link>
-                <Link className={`btn btnTheme`} href="">Sign out</Link>
+                <Link className={styles.btnTheme} href="accountDetails"><i className={`${styles.icon} fa-solid fa-gear`}></i> Account Details</Link>
+                <Link className={styles.btnTheme} href="accountSecurity"><i className={`${styles.icon} fa-solid fa-lock`}></i> Security</Link>
+                <Link className={styles.btnTheme} href="accountSecurity"><i className={`${styles.icon} fa-regular fa-bell`}></i> Notifications</Link>
+                <Link className={styles.btnTheme} href="accountSecurity"><i className={`${styles.icon} fa-regular fa-message`}></i> Messages</Link>
+                <Link className={styles.btnTheme} href="accountSavedCourses"><i className={`${styles.icon} fa-regular fa-bookmark`}></i> Saved Items</Link>
+                <Link className={styles.btnTheme} href=""><i className={`${styles.icon} fa-solid fa-arrow-right-from-bracket`}></i> Sign out</Link>
             </nav>
         </aside>
         
