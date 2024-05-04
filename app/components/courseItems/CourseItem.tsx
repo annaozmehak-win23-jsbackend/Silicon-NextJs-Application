@@ -11,7 +11,7 @@ interface CourseItemProps {
     export default function CourseItem() {
     return (
         // <Link href={`/courses/${item.id}`} className={styles.course}>
-        <Link href={`/courses/1`} className={styles.course}>
+        <Link href={`/course`} className={styles.course}>
             <div id="addMessage"></div>
 
             <div className="courses">
