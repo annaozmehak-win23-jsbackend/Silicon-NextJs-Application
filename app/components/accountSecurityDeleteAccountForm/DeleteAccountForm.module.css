@@ -1,0 +1,26 @@
+.formTitle {
+    color: var(--color-theme);
+}
+
+.deleteAccountForm {
+    padding: 1rem;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: grid;
+    gap: 1rem 2rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "delete" "button";
+}
+
+#form-delete {
+    grid-area: delete;
+}
+
+.form-button {
+    grid-area: button;
+    margin: 20px 0;
+}

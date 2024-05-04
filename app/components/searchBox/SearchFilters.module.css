@@ -1,0 +1,35 @@
+.filterAndSearch {
+    display: flex;
+    flex-direction: column;   
+}
+
+.inputContainer {
+    position: relative;
+    width: 240px;
+}
+
+#searchQuery {
+    padding: 10px;
+    border: 2px solid var(--color-gray-400);
+    border-radius: 5px;
+    margin-right: 10px;
+    height: 44px;
+}
+
+.icon {
+    position: absolute;
+    left: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (min-width: 992px) {
+    .filterAndSearch {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    #categories {
+        margin-bottom: 0;
+    }
+}

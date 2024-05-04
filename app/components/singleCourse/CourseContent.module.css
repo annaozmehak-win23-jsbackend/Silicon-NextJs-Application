@@ -1,0 +1,95 @@
+.courseContent {
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 20px;
+}
+
+.details {
+    width: 80%;
+}
+
+.title {
+    font-weight: 800;
+}
+
+.description {
+    font-weight: 800;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.stepsIcon {
+    color: var(--color-theme);
+}
+
+
+.includes {
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.10);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-gray-100);
+}
+
+.includesTitle {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.listItem {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+.listIcon {
+    color: var(--color-gray-600);
+}
+
+.priceWithSale {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.discountPrice {
+    font-size: 1.5rem;
+    color: var(--color-gray-900);
+    font-weight: 700;
+}
+
+.regularPrice {
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: var(--color-gray-900);
+    font-weight: 700;
+}
+
+.joinBtn {
+    width: 70%;
+}
+
+@media (min-width: 1200px) {
+    .courseContent {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .details {
+        width: 50%;
+    }
+
+    .includes {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,49 @@
+.courses {
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+    margin: 0 10px;
+    display: inline;
+}
+
+.currentPage {
+    color: var(--color-theme);
+}
+
+.titleAndFilter {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.pageTitle {
+    font-weight: 800;
+    margin-top: 0;
+}
+
+
+
+@media (min-width: 992px) {
+    .titleAndFilter {
+        justify-content: space-between;
+        flex-direction: row;
+        height: 52px;
+    }
+}
