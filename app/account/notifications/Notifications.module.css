@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+}
+
+.content {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.toggleBtnBox {
+    display: flex;
+}
+
+.textBox {
+    margin-left: 20px;
+}
+
+.emailInput {
+    width: 416px;
+}
+
+.toggleBtnTitle {
+    margin-bottom: 0;
+}
+
+.toggleBtnDescription {
+    margin-top: 5px;
+}
+
+.notificationBtns {
+    display: flex;
+    gap: 15px;
+    align-items: end;
+}
