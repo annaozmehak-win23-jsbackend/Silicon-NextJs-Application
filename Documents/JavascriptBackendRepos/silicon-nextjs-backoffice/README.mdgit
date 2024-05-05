@@ -1,1 +1,0 @@
-"# Silicon-nextjs-backoffice"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin git@github.com:annaozmehak-win23-jsbackend/Silicon-nextjs-backoffice.gitgit push -u origin main
