@@ -1,0 +1,107 @@
+#signin {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 100px;
+}
+
+ 
+.signInForm {
+    padding: 1rem;
+}
+
+.title {
+    font-weight: 800;
+}
+
+.createAccountLink {
+    text-decoration: underline;
+}
+
+.createAccountLink:hover {
+    text-decoration: none;
+}
+
+
+.content {
+    display: grid;
+    gap: 1rem 2rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas: "email" "password" "remember" "button" "forgot" "external";
+}
+
+#formEmail {
+    grid-area: email;
+}
+
+#formPassword {
+    grid-area: password;
+}
+
+#formRemember {
+    grid-area: remember;
+}
+
+#formButton {
+    grid-area: button;
+}
+
+#formForgotPassword {
+    grid-area: forgot;
+    width: 100%;
+    margin: 1rem 0 0 0;
+    text-align: center;
+    /* border-bottom: 1px solid var(--color-gray-300); */
+    padding-bottom: 20px;
+}
+
+                /* hr {
+                    grid-area: hr;
+                }
+
+                #external-providers {
+                    grid-area: external;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    align-items: center;
+
+                    p {
+                        font-weight: 900;
+                    }
+
+                    .providers {
+                        display: flex;
+                        justify-content: space-around;
+                        gap: 15px;
+                        width: 100%;
+                    }
+                }
+
+                a {
+                    flex: 1;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                } */
+
+
+
+
+@media (min-width: 992px) {
+    .container {
+        width: 60%;
+    }
+}       
+
+@media (min-width: 768px) {
+    .container {
+        width: 30%;
+    }
+}       

@@ -58,10 +58,10 @@ export default function Header() {
             <Link href="/contact">Contact</Link>
           </nav>
 
-          <div className="btn-switch">
+          <div className={`btn-switch ${styles.btnSwitch}`}>
             <label className="switch-label">Light</label>
             <label className="switch" htmlFor="switch-mode">
-                <input type="checkbox" id="switch-mode" />
+                <input className="switch-input" type="checkbox" id="switch-mode" />
                 <span className="slider round"></span>
             </label>
             <label className="switch-label">Dark</label>

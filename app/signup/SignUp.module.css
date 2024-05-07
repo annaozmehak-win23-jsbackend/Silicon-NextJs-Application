@@ -1,0 +1,93 @@
+#signup {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.signUpForm {
+    padding: 1rem;
+    width: 100%;
+}
+
+.title {
+    font-weight: 800;
+}
+
+.signInLink {
+    text-decoration: underline;
+}
+
+.signInLink:hover {
+    text-decoration: none;
+}
+
+.content {
+    display: grid;
+    gap: 1rem 2rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas: "firstname" "lastname" "email" "password" "confirm" "terms" "button";
+}
+
+#formFirstname {
+    grid-area: firstname;
+}
+
+#formLastname {
+    grid-area: lastname;
+}
+
+#form-Email {
+    grid-area: email;
+}
+
+#form-Password {
+    grid-area: password;
+}
+
+#formConfirm {
+    grid-area: confirm;
+}
+
+#formTerms {
+    grid-area: terms;
+    padding: 1rem 0;
+}
+
+#formSubmit {
+    grid-area: button;
+}
+
+.termsLink {
+    text-decoration: underline;
+}
+
+.termsLink:hover {
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+    .content {
+        grid-auto-columns: 1fr 1fr;
+                    grid-template-areas: "firstname lastname" "email email" "password password" "confirm confirm" "terms terms" "button button";
+    }
+} 
+
+@media (min-width: 1200px) {
+    .signUpForm {
+        width: 60%;
+    }
+} 
+
+@media (min-width: 992px) {
+    .container {
+        width: 60%;
+    }
+}       
+
