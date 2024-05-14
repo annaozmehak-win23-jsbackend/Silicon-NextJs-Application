@@ -1,0 +1,59 @@
+#integrateToolsSection {
+    margin-top: 40px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 800;
+}
+
+.description {
+    color: var(--color-gray-600);
+    max-width: 856px;
+    text-align: center;
+}
+
+.integrateTools {
+    margin: 40px 0;
+}
+                
+.tools {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+                  
+.tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toolImage {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.toolText {
+    color: var(--color-gray-700);
+    text-align: start;
+}
+
+@media (min-width: 1200px) {
+    .tools {
+        flex-direction: row;
+        gap: 70px;
+    }
+    
+    .tool {
+        align-items: start;
+    }
+}

@@ -1,0 +1,99 @@
+#downloadSection {
+    display: flex;
+    background-color: var(--color-gray-100);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 70px 50px 70px;
+}
+
+.mobileImg {
+    width: 526px;
+    height: 580px;
+}
+
+.content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: var(--color-gray-black);
+    margin: 20px 0;
+    width: 100%;
+    font-weight: 800;
+}
+
+.storeName {
+    color: var(--color-gray-600);
+    margin-bottom: 0;
+}
+
+.star {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-warning);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+.awardTitle {
+    margin-bottom: 0;
+}
+
+.awardRating {
+    color: var(--color-gray-700);
+}
+
+.storeImage {
+    width: 180px;
+    height: 52px;
+    margin-bottom: 30px;
+}
+
+
+@media (min-width: 768px) {
+    .downloadOption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .storeImage {
+        margin-bottom: 0;
+        align-self: flex-end;
+        margin-left: 40px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .storeContent {
+        display: flex;
+    }
+    
+    .content {
+        align-items: flex-start;
+    }
+
+    .title {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,131 @@
+#newsletterSection {
+    background-color: var(--color-gray-100);
+    padding: 70px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleBox {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.title {
+    color: var(--color-gray-900);
+    margin-right: 10px;
+    font-weight: 800;
+}
+        
+#newsletterForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.signUpText {
+    font-weight: 700;
+    color: var(--color-gray-900);
+}
+
+.checkboxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.checkboxLabel {
+    color: var(--color-gray-600);
+}
+
+.emailForm {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.emailInput {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.submitBtn {
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.terms {
+    color: var(--color-gray-600);
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.termsLink {
+    color: var(--color-theme);
+    text-decoration: underline;
+}
+
+.termsLink:hover {
+    text-decoration: none;
+}
+
+
+@media (min-width: 992px) {
+    .titleBox {
+        width: 93%;
+        justify-content: flex-start;
+    }
+
+    .title {
+        margin-right: 20px;
+    }
+
+    .checkboxes {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 856px;
+        margin-bottom: 30px;
+    }
+
+    .emailForm {
+        width: 856px;
+    }
+
+    .terms {
+        width: 93%;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1200px) {
+    .titleBox {
+        width: 77%;
+    }
+
+    .terms {
+        width: 77%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .titleBox {
+        width: 67%;
+    }
+
+    .terms {
+        width: 67%;
+    }
+}
