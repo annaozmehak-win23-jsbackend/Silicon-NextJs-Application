@@ -52,8 +52,8 @@ export default function Header() {
           </Link>
 
           <nav className={styles.nav}>
-            <Link href="/">Overview</Link>
-            <Link href="/">Features</Link>
+            <Link href="#overview">Overview</Link>
+            <Link href="#features">Features</Link>
             <Link href="/courses">Courses</Link>
             <Link href="/contact">Contact</Link>
           </nav>

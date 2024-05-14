@@ -34,7 +34,7 @@ export default function Features() {
         }
     ]
   return (
-        <section className={styles.features}>
+        <section id='features' className={styles.features}>
             <div className={`container ${styles.container}`}>
                 <h1 className={styles.title}>What Do You Get with Our Tool?</h1>
                 <p className={styles.ingress}>Make sure all your tasks are organized so you can set the priorities and focus on important.</p>

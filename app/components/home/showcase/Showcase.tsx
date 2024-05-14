@@ -22,7 +22,7 @@ export default function Showcase() {
     ]
 
   return (
-        <section className={styles.showcase}>
+        <section id='overview' className={styles.showcase}>
             <img className={styles.backgroundImage} src="images/showcase-background.svg" alt="" />
             <div className={`container ${styles.container}`}>
                 <div className={styles.content}>
