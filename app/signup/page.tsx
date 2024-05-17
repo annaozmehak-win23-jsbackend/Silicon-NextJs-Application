@@ -14,8 +14,7 @@ export default function SignUp() {
         lastName: '',
         email: '',
         password: '',
-        confirmPassword: '',
-        terms: false
+        confirmPassword: ''
     });
 
     const onChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -25,20 +24,29 @@ export default function SignUp() {
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
+        if (!checkboxRef.current?.checked) {
+            setError("You must agree to the terms and conditions.");
+            return;
+        }
+
+        const { confirmPassword, ...dataToSend } = signUpForm;
+
+        console.log(dataToSend)
         const res = await fetch('https://accountprovider-silicon-win23-annaozmehak.azurewebsites.net/api/SignUp?code=dWZLKstxLQ9cWX5NrYVpyJGhKre-gWWouxRHY7SUtq8nAzFuaRL06Q==', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(signUpForm)
+            body: JSON.stringify(dataToSend)
         });
 
-        if (res.status === 200) {
-            router.push('/confirm?email=' + signUpForm.email);
-        }
-        else {
+        if (res.ok) {
+            router.push('/signin');
+        } else if (res.headers.get('content-type')?.includes('application/json')) {
             let result = await res.json();
             setError(result.error);
+        } else {
+            setError('An error occurred. Please try again.');
         }
     }
 
@@ -47,7 +55,7 @@ export default function SignUp() {
             <div className={`container ${styles.container}`}>
                 {error && <div className='alert alert-danger'>{error}</div>}
 
-                <form onSubmit={handleSubmit} className={styles.signUpForm} method="post" asp-controller="Auth" asp-action="SignUp" noValidate>
+                <form onSubmit={handleSubmit} className={styles.signUpForm} method="post" noValidate>
                     <h1 className={styles.title}>Create Account</h1>
                     <p>Already have an account? <a className={styles.signInLink} href='/signin'>Sign in here</a>.</p>
         
@@ -70,7 +78,7 @@ export default function SignUp() {
                         </div>
                         <div id={styles.formConfirm} className="input-group">
                             <label>Confirm Password</label>
-                            <input value={signUpForm.confirmPassword} onChange={onChange} type='password' name='confirmPassword' />
+                            <input onChange={onChange} type='password' name='confirmPassword' />
                         </div>
                         <div id={styles.formTerms} className="checkbox">
                             <div className="checkbox-group">
