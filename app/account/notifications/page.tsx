@@ -20,15 +20,12 @@ export default function AccountDetails() {
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        // if (checkboxRef.current!.checked) {
-        //     setSuccess("You are now subscribed.");
-        // }
-         if (!checkboxRef.current?.checked) {
-            setError("You must check the box to subscribe to the newsletter.");
-            return;
-        }
+        const url = checkboxRef.current?.checked
+        ? 'https://newsletterprovider-silicon-win23-annaozmehak.azurewebsites.net/api/Subscribe?code=5CrZZO5rSPxQcqvGKfwv0Zzk0KgWZxytc6rkadfYe9-pAzFuekW0dw%3D%3D'
+        : 'https://newsletterprovider-silicon-win23-annaozmehak.azurewebsites.net/api/UnSubscribe?code=VqznU5w3x0sagOJvE_rOhM6MtbH-JJ4sXA5hpFK2TbktAzFu5Y4zPA%3D%3D';
+
         console.log(subscribeForm)
-        const res = await fetch('https://newsletterprovider-silicon-win23-annaozmehak.azurewebsites.net/api/Subscribe?code=5CrZZO5rSPxQcqvGKfwv0Zzk0KgWZxytc6rkadfYe9-pAzFuekW0dw%3D%3D', {
+        const res = await fetch(url, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -37,7 +34,7 @@ export default function AccountDetails() {
         });
 
         if (res.ok) {
-            setSuccess('Your are now subscribed.');
+            setSuccess(`You are now ${checkboxRef.current?.checked ? 'subscribed' : 'unsubscribed'}.`);
         } else if (res.headers.get('content-type')?.includes('application/json')) {
             let result = await res.json();
             setError(result.error);

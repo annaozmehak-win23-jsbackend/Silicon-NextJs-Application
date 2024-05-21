@@ -365,6 +365,19 @@ select {
 
 }
 
+.alert-success {
+    background-color: var(--color-success);
+    border-radius: 8px;
+    padding: 10px 5px;
+}
+
+.alert-danger {
+    background-color: var(--color-danger);
+    border-radius: 8px;
+    padding: 10px 5px;
+
+}
+
 
 .icon {
     margin-right: 10px;

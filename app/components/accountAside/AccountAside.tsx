@@ -7,7 +7,7 @@ export default function AccountAside() {
         <aside className={styles.accountAside}>
             <div className={styles.profileInfo}>
                 <div className={styles.imageContainer}>
-                    <img className={styles.img} id="profileImage" src="~/uploads/@user.ProfileImage" alt='' />
+                    <img className={styles.img} id="profileImage" src="/images/avatar.svg" alt='' />
                     <form id="updateProfileImage" asp-controller="Account" asp-action="UploadProfileImage" method="post">
                         <input id="fileInput" type="file" name="ProfileImage" hidden />
                         <label className={`btn btn-circle btn-circle-sm ${styles.label}`}><i className="fa-regular fa-refresh"></i></label>
