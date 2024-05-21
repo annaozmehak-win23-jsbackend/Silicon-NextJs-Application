@@ -25,7 +25,7 @@ export default async function signInActions(currentState: any, formData: FormDat
 
         if (res.status === 200) {
             const result = await res.json();
-            
+
             cookies().set('Authorization', result.token, {
                 secure: true,
                 httpOnly: true,
