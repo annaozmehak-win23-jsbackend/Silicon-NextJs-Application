@@ -43,7 +43,7 @@ export default function Confirm() {
             <div className="alert alert-danger">
                 <form onSubmit={handleSubmit} noValidate>
                     <h1>Confirm your account</h1>
-                    <p>Don't get an verification code? <Link href="/resend">Resend here</Link></p>
+                    <p>Dont get an verification code? <Link href="/resend">Resend here</Link></p>
 
                     <div className="form-content">
                         <div id="form-code" className="input-group">

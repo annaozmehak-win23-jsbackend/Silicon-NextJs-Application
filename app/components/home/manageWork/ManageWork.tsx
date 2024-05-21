@@ -28,7 +28,7 @@ export default function ManageWork() {
                     <ul className={styles.list}>
                         {
                             data.map((iconAndText) => (
-                                <li className={styles.listItem}><i className={`fa-sharp fa-light fa-circle-check icon ${styles.icon}`}></i>{iconAndText.text}</li>
+                                <li key={iconAndText.text} className={styles.listItem}><i className={`fa-sharp fa-light fa-circle-check icon ${styles.icon}`}></i>{iconAndText.text}</li>
                             ))
                         }
                     </ul>

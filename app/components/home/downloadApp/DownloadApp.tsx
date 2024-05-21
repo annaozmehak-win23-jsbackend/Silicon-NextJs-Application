@@ -26,7 +26,7 @@ export default function DownloadApp() {
                         <div className={styles.downloadOption}>
                             {
                                 data.map((app) => (
-                                    <div className={styles.storeContent}>
+                                    <div className={styles.storeContent} key={app.storeName}>
                                         <div>
                                             <p className={styles.storeName}>{app.storeName}</p>
                                             <div className={styles.star}></div>

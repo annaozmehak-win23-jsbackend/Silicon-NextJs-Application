@@ -59,7 +59,7 @@ export default function TopTools() {
                             
                             {
                                 topTools.map((tool) => ( 
-                                    <div className={styles.tool}>
+                                    <div className={styles.tool} key={tool.text}>
                                         <img className={styles.toolImage} src={tool.image} alt={tool.altText} />
                                         <p className={styles.toolText}>{tool.text}</p>
                                     </div>
@@ -71,7 +71,7 @@ export default function TopTools() {
                             
                             {
                                 bottomTools.map((tool) => (
-                                    <div className={styles.tool}>
+                                    <div className={styles.tool} key={tool.text}>
                                         <img className={styles.toolImage} src={tool.image} alt={tool.altText} />
                                         <p className={styles.toolText}>{tool.text}</p>
                                     </div>

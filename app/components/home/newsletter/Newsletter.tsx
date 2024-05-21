@@ -5,7 +5,7 @@ export default function Newsletter() {
         <section id={styles.newsletterSection} className="newsletter-section">
             <div className={`container ${styles.container}`}>
                 <div className={styles.titleBox}>
-                    <h3 className={styles.title}>Don't Want to Miss Anything?</h3>
+                    <h3 className={styles.title}>Dont Want to Miss Anything?</h3>
                     <img src="images/arrows.svg" alt="Arrow" />
                 </div>
 

@@ -25,7 +25,7 @@ export default function SignIn() {
         
                 <form action={setSignInForm} className={styles.signInForm} noValidate>
                     <h1 className={styles.title}>Welcome Back</h1>
-                    <p>Don't have an account yet? <a className={styles.createAccountLink} href='/signup'>Sign up here</a>.</p>
+                    <p>Dont have an account yet? <a className={styles.createAccountLink} href='/signup'>Sign up here</a>.</p>
         
                     <div className={styles.content}>
                         <div id={styles.formEmail} className="input-group">
