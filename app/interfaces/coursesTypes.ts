@@ -1,33 +1,24 @@
-export interface Course {
-    id: string;
-    image: string;
-    partitionKey: string;
-    isBestseller: boolean;
-    isDigital: boolean;
-    categories: string[];
-    title: string;
-    ingress: string;
-    starRating: number;
-    reviews: string;
-    likes: string;
-    likesInProcents: string;
-    hours: number;
-    authors: string[];
-    prices: {
-        current: string;
-        price: number;
-        discount: number;
-    };
-    content: {
-        description: string;
-        includes: string[];
-        programDetails: ProgramDetail[];
-    
-    };
-}
+// interface CourseItemProps {
+//     item: Course;
+// }
 
-export interface ProgramDetail {
-    id: number;
+interface Author {
+    name: string;
+  }
+  
+interface Price {
+    price: number;
+    currency: string;
+    discount: number;
+}
+  
+export interface CourseContent {
+    id: string;
+    isBestSeller: boolean;
     title: string;
-    description: string;
+    authors: Author[];
+    prices: Price;
+    hours: number;
+    likesInProcent: number;
+    likes: number;
 }

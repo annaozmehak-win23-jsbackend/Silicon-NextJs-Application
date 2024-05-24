@@ -23,7 +23,7 @@ export default function Showcase() {
 
   return (
         <section id='overview' className={styles.showcase}>
-            <img className={styles.backgroundImage} src="images/showcase-background.svg" alt="" />
+            <img className={styles.backgroundImage} src="/images/showcase-background.svg" alt="" />
             <div className={`container ${styles.container}`}>
                 <div className={styles.content}>
                     <h1 className={styles.title}>Task Management Assistant You Gonna Love</h1>

@@ -24,7 +24,6 @@ export default function AccountDetails() {
         ? 'https://newsletterprovider-silicon-win23-annaozmehak.azurewebsites.net/api/Subscribe?code=5CrZZO5rSPxQcqvGKfwv0Zzk0KgWZxytc6rkadfYe9-pAzFuekW0dw%3D%3D'
         : 'https://newsletterprovider-silicon-win23-annaozmehak.azurewebsites.net/api/UnSubscribe?code=VqznU5w3x0sagOJvE_rOhM6MtbH-JJ4sXA5hpFK2TbktAzFu5Y4zPA%3D%3D';
 
-        console.log(subscribeForm)
         const res = await fetch(url, {
             method: 'POST',
             headers: {
@@ -42,6 +41,9 @@ export default function AccountDetails() {
             setError('An error occurred. Please try again.');
         }
     }
+
+    //366 kvarg
+    //103applemos
 
     return (
         <div className={styles.accountSavedItems}>

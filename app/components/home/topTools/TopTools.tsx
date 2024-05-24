@@ -36,12 +36,12 @@ export default function TopTools() {
         text: 'A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.'
     },
     {
-        image: 'images/icons/dropbox-icon.svg',
+        image: '/images/icons/dropbox-icon.svg',
         altText: 'Figma',
         text: 'Ut in turpis consequat odio diam lectus elementum. Est faucibus blandit platea.'
     },
     {
-        image: 'images/icons/evernote-icon.svg',
+        image: '/images/icons/evernote-icon.svg',
         altText: 'Slack',
         text: 'Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.'
     }

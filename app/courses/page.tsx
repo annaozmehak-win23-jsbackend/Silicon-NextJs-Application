@@ -3,7 +3,9 @@ import Pagination from "../components/pagination/Pagination";
 import SearchFilters from "../components/searchBox/SearchFilters";
 import styles from "./Page.module.css";
 
+
 export default function Courses() {
+    
     return (
         <section className={styles.courses}>
         <div className={`container ${styles.container}`}>

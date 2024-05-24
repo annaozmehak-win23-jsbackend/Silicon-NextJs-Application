@@ -1,3 +1,9 @@
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .course {
     border: 1px solid var(--color-gray-200);
     border-radius: 10px;
