@@ -56,7 +56,7 @@ export default function CourseItem() {
                                 {/* <img className={styles.courseImage} src={item.image} alt={item.title} /> */}
                                 <img className={styles.courseImage} src="/images/course1.svg" alt="" />
                             </div>
-                            <AddBookmarkBtn itemId={data.id} />
+                            <AddBookmarkBtn itemId={data.title} />
                             { data.isBestSeller ? (
                                     <div className={styles.tag}>
                                         <p className={styles.tagTitle}>Best Seller</p>
