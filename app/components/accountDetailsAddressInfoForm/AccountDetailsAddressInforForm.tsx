@@ -8,24 +8,20 @@ export default function AccountDetailsAddressInfoForm() {
     
             <div className={styles.content}>
                 <div id={styles.formAddressline1} className="input-group">
-                    <label asp-for="AddressInfo!.AddressLine_1"></label>
-                    <span asp-validation-for="AddressInfo!.AddressLine_1"></span>
-                    <input asp-for="AddressInfo!.AddressLine_1" />
+                    <label htmlFor='addressLine_1'>Address line 1</label>
+                    <input type='text' name='addressLine_1' />
                 </div>
                 <div id={styles.formAddressline2} className="input-group">
-                    <label asp-for="AddressInfo!.AddressLine_2"></label>
-                    <span className={styles.span} asp-validation-for="AddressInfo!.AddressLine_2"></span>
-                    <input asp-for="AddressInfo!.AddressLine_2" />
+                    <label htmlFor='addressLine_2'>Address line 2 (optional)</label>
+                    <input type='text' name='addressLine_2' />
                 </div>
                 <div id={styles.postalCode} className="input-group">
-                    <label asp-for="AddressInfo!.PostalCode"></label>
-                    <span asp-validation-for="AddressInfo!.PostalCode"></span>
-                    <input asp-for="AddressInfo!.PostalCode" />
+                    <label htmlFor='postalCode'>Postal code</label>
+                    <input type='text' name='postalCode' />
                 </div>
                 <div id={styles.city} className="input-group">
-                    <label asp-for="AddressInfo!.City"></label>
-                    <span asp-validation-for="AddressInfo!.City"></span>
-                    <input asp-for="AddressInfo!.City" />
+                    <label htmlFor='city'>City</label>
+                    <input type='text' name='city' />
                 </div>
     
                 <div className={styles.formButtons}>

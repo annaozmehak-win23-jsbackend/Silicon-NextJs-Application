@@ -9,49 +9,24 @@ export default function AccountDetailsBasicInfoForm() {
     
             <div className={styles.content}>
                 <div id={styles.formFirstname} className="input-group">
-                    <label asp-for="BasicInfo!.FirstName"></label>
-                    {/* @if (!Model.IsExternalAccount)
-                    { */}
-                        <span asp-validation-for="BasicInfo!.FirstName"></span>
-                        <input asp-for="BasicInfo!.FirstName" />
-             {/*         }
-                     else
-                     { */}
-                         {/* <input asp-for="BasicInfo!.FirstName" /> */}
-                  {/*    } */}
+                    <label htmlFor="firstName">First name</label>
+                    <input type="text" name="firstName" />
                 </div>
                 <div id={styles.formLastname} className="input-group">
-                    <label asp-for="BasicInfo!.LastName"></label>
-                    {/* @if (!Model.IsExternalAccount)
-                    { */}
-                        <span asp-validation-for="BasicInfo!.LastName"></span>
-                        <input asp-for="BasicInfo!.LastName" />
-                    {/* }
-                    else
-                    { */}
-                        {/* <input asp-for="BasicInfo!.LastName" readonly />
-                    } */}
+                    <label htmlFor="lastName">Last name</label>
+                    <input type="text" name="lastName" />
                 </div>
                 <div id={styles.formEmail} className="input-group">
-                    <label asp-for="BasicInfo!.Email"></label>
-                    {/* @if (!Model.IsExternalAccount)
-                    { */}
-                        <span asp-validation-for="BasicInfo!.Email"></span>
-                        <input asp-for="BasicInfo!.Email" />
-                    {/* }
-                    else
-                    { */}
-                        {/* <input asp-for="BasicInfo!.Email" /> */}
-                    {/* } */}
+                    <label htmlFor="email">Email</label>
+                    <input type="email" name="email" />
                 </div>
                 <div id={styles.formPhone} className="input-group">
-                    <label asp-for="BasicInfo!.Phone"></label>
-                    <span asp-validation-for="BasicInfo!.Phone"></span>
-                    <input asp-for="BasicInfo!.Phone" />
+                    <label htmlFor="phone">Phone number</label>
+                    <input type="text" name="phone" />
                 </div>
                 <div id={styles.formBio} className="input-group">
-                    <label asp-for="BasicInfo!.Biography">Bio <span className={styles.span}>(optional)</span></label>
-                    <textarea asp-for="BasicInfo!.Biography"></textarea>
+                    <label htmlFor="biography">Bio <span className={styles.span}>(optional)</span></label>
+                    <textarea name="biography"></textarea>
                 </div>
                 <div className={styles.formButtons}>
                     <button className="btn btn-gray" type="reset">Cancel</button>

@@ -5,45 +5,6 @@ import { cookies } from "next/headers";
 export default function Header() {
   const isSignedIn = cookies().get('Authorization')
 
-  // useEffect(() => {
-  //   const changeTheme = () => {
-  //     let sw = document.querySelector('#switch-mode') as HTMLInputElement;
-  //     if (!sw) return;
-
-  //     let theme = sw.checked ? "dark" : "";
-  //     document.documentElement.className = theme; // Change this line
-
-  //     // Save theme to localStorage
-  //     localStorage.setItem('theme', theme);
-
-  //     // No need to reload the page
-  //   };
-
-  //   // Load theme from localStorage
-  //   const savedTheme = localStorage.getItem('theme');
-  //   if (savedTheme) {
-  //     document.documentElement.className = savedTheme; // Change this line
-  //     let sw = document.querySelector('#switch-mode') as HTMLInputElement;
-  //     if (sw) {
-  //       sw.checked = savedTheme === 'dark';
-  //     }
-  //   }
-
-  //   let sw = document.querySelector('#switch-mode') as HTMLInputElement;
-  //   if (sw) {
-  //     sw.addEventListener('change', changeTheme);
-  //   }
-
-  //   // Cleanup function to remove the event listener when the component unmounts
-  //   return () => {
-  //     let sw = document.querySelector('#switch-mode') as HTMLInputElement;
-  //     if (sw) {
-  //       sw.removeEventListener('change', changeTheme);
-  //     }
-  //   };
-  // }, []);
-
-
     return (
       <header className={styles.header}>
         <div className={`container ${styles.container}`}>

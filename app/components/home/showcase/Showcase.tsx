@@ -1,22 +1,21 @@
-import { symlink } from 'fs';
 import styles from './Showcase.module.css';
 
 export default function Showcase() {
     const showcaseData = [
         {
-            imageUrl: 'images/brands/brand1.svg',
+            imageUrl: '/images/brands/brand1.svg',
             altText: 'Brand 1'
         },
         {
-            imageUrl: 'images/brands/brand2.svg',
+            imageUrl: '/images/brands/brand2.svg',
             altText: 'Brand 2'
         },
         {
-            imageUrl: 'images/brands/brand3.svg',
+            imageUrl: '/images/brands/brand3.svg',
             altText: 'Brand 3'
         },
         {
-            imageUrl: 'images/brands/brand4.svg',
+            imageUrl: '/images/brands/brand4.svg',
             altText: 'Brand 3'
         }
     ]

@@ -14,7 +14,7 @@ export default function Slider() {
                     <h3 className={`${styles.darkText} ${styles.title}`}>Light & Dark Mode</h3>
                 </div>
     
-                <img className={styles.mockup} src="images/mockup.svg" alt="@slider.AltText" />
+                <img className={styles.mockup} src="https://siliconannaozmehak.blob.core.windows.net/images/mockup.svg" alt="@slider.AltText" />
             </div>
         </section>
     );

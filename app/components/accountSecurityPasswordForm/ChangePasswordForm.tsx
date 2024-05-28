@@ -10,19 +10,16 @@ export default function ChangePasswordForm() {
 
             <div className={styles.content}>
                 <div id={styles.formCurrentPassword} className="input-group">
-                    <label asp-for="Password!.CurrentPassword"></label>
-                    <span asp-validation-for="Password!.CurrentPassword"></span>
-                    <input asp-for="Password!.CurrentPassword" />
+                    <label htmlFor="currentPassword">Current password</label>
+                    <input type="password" name='currentPassword' />
                 </div>
                 <div id={styles.formNewPassword} className="input-group">
-                    <label asp-for="Password!.NewPassword"></label>
-                    <span asp-validation-for="Password!.NewPassword"></span>
-                    <input asp-for="Password!.NewPassword" />
+                    <label htmlFor="newPassword">New password</label>
+                    <input type='password' name='newPassword' />
                 </div>
                 <div id={styles.formConfirmPassword} className="input-group">
-                    <label asp-for="Password!.ConfirmPassword"></label>
-                    <span asp-validation-for="Password!.ConfirmPassword"></span>
-                    <input asp-for="Password!.ConfirmPassword" data-val-equalto-other="Password.NewPassword" />
+                    <label htmlFor="confirmPassword">Confirm password</label>
+                    <input type='password' name='confirmPassword' />
                 </div>
 
                 <div className={styles.formButtons}>

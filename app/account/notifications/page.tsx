@@ -42,9 +42,6 @@ export default function AccountDetails() {
         }
     }
 
-    //366 kvarg
-    //103applemos
-
     return (
         <div className={styles.accountSavedItems}>
             <div className={`container ${styles.container}`}>
