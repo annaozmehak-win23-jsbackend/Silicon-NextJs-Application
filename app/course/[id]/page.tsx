@@ -49,7 +49,7 @@ export default function Page({params}: {params: {id: string}}) {
   const json = JSON.stringify({ query });
 
    const handleGetCourse = (id: string) => {
-        fetch("http://localhost:7180/api/graphql", {
+        fetch("https://courseprovider-silicon-win23-annaozmehak.azurewebsites.net/api/graphql?code=CVCZN64AEFAJ7yBHc-pthwn1688UT39TE83HmqIlT2RlAzFuianevA%3D%3D", {
             method: "POST",
             headers: {
             "Content-Type": "application/json",

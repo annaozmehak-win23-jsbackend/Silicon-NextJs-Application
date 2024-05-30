@@ -32,7 +32,7 @@ export default function CourseItem() {
     const json = JSON.stringify({ query });
       
         useEffect(() => {
-          fetch("http://localhost:7180/api/graphql", {
+          fetch("https://courseprovider-silicon-win23-annaozmehak.azurewebsites.net/api/graphql?code=CVCZN64AEFAJ7yBHc-pthwn1688UT39TE83HmqIlT2RlAzFuianevA%3D%3D", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
