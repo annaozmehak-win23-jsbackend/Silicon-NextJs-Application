@@ -16,6 +16,7 @@ export default function Page({params}: {params: {id: string}}) {
         id
         isBestSeller
         isDigital
+        imageUri
         title
         ingress
         starRating
@@ -73,7 +74,7 @@ export default function Page({params}: {params: {id: string}}) {
     return (
         <section className={styles.course}>              
             <div className={styles.courseImage}>
-                 <img className={styles.image} src="/images/course1-bg.svg" alt="Course image" />
+                 <img className={styles.image} src={course.imageUri} alt="Course image" />
             </div>
             <div className={`container ${styles.container}`}>
                 <div className={styles.showcaseContainer}>

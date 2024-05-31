@@ -31,7 +31,6 @@ export default function SignUp() {
 
         const { confirmPassword, ...dataToSend } = signUpForm;
 
-        console.log(dataToSend)
         const res = await fetch('https://accountprovider-silicon-win23-annaozmehak.azurewebsites.net/api/SignUp?code=dWZLKstxLQ9cWX5NrYVpyJGhKre-gWWouxRHY7SUtq8nAzFuaRL06Q==', {
             method: 'POST',
             headers: {

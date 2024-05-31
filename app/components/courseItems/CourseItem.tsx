@@ -15,6 +15,7 @@ export default function CourseItem() {
         getCourses {
         id
         isBestSeller
+        imageUri
         title
         authors {
             name
@@ -54,7 +55,7 @@ export default function CourseItem() {
                         <div className={styles.course}>
                             <div className="course-image">
                                 {/* <img className={styles.courseImage} src={item.image} alt={item.title} /> */}
-                                <img className={styles.courseImage} src="/images/course1.svg" alt="" />
+                                <img className={styles.courseImage} src={data.imageUri} alt="" />
                             </div>
                             <AddBookmarkBtn itemId={data.title} />
                             { data.isBestSeller ? (
